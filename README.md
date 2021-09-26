@@ -58,28 +58,6 @@
 
 ## 프로젝트 이력
 
-
-<img src='./images/toonies.png' width="80" />
-
-### 투니스
-- 소개: 합법적으로, 공짜로, 누구나 웹툰을 볼 수 있도록 도와주는 서비스
-- 사이드 프로젝트로 혼자 서버/백엔드 개발
-- 기간 : 2019.01 ~ 2019.12
-- 매출 : 8,709,411원
-
-<img src='./images/ridibooks.png' width="80" />
-
-### 리디북스
-- 소개: 1등 전자책 서비스
-- 기간: 2018.09 ~ 2020.09
-- 프로젝트 : 리디페이퍼(3세대) 앱 개발, 웹툰/웹소설용 기능 추가, 유지보수
-
-### 헤이딜러
-- 소개: 경매로 내차팔기 서비스
-- 기간: 2017.07 ~ 2018.09
-- 역할: 유지보수, 신규기능 개발
-- 관련기술: MVP, rxJava, databinding, lint, Travis, Fabric, SharedElement Transition, Canvas
-
 <img src="https://avatars0.githubusercontent.com/u/24453230?s=200&v=4" width="80" height="80"/>
 
 ### CALY
@@ -99,31 +77,6 @@
 - 관련기술: python, Message-Q, worker, Multiprocessing, RealTimeMessaging(Socket), newrelic
 - 자세한 설명은 [이 github 저장소](https://github.com/JSpiner/Soma_SlackBot_taja)에 있습니다.
 
-### ZeplinDiff
-- 개인 프로젝트
-- 디자인 협업툴 Zeplin을 사용할때, 도움을 주는 유틸
-- 자세한 내용은 [이 github 저장소](https://github.com/JSpiner/ZeplinDiff)에서 보실 수 있습니다.
-
-### CacheBank
-- 개인 프로젝트
-- rxJava기반 안드로이드 Disk/Memory 캐싱 라이브러리
-- test coverage 83%
-- 자세한 내용은 [이 github 저장소](https://github.com/JSpiner/CacheBank)에서 보실 수 있습니다.
-
-### SafeExecutor 
-- 개인 프로젝트
-- event 기반 error handler
-- test coverage 95%
-- 자세한 내용은 [이 github 저장소](https://github.com/JSpiner/SafeExecutor)에서 보실 수 있습니다.
-
-### TedPermission [Contributor]
-- [Travis CI 빌드 관련 설정 수정 PR](https://github.com/ParkSangGwon/TedPermission/pull/66)
-- [화면 회전 옵션 추가 및 SDK 버전에 따른 대응 추가 PR](https://github.com/ParkSangGwon/TedPermission/pull/74#issuecomment-363602722)
-
-### RxAndroid [Contributor]
-- [오타 수정 PR](https://github.com/ReactiveX/RxAndroid/pull/411)
-
-
 여기까지 읽어주셔서 감사합니다. <br/>
-부족한 부분이나 더 궁금하신 내용이 있다면 [이슈](https://github.com/JSpiner/RESUME/issues)로 남겨주시겨나, jspiner@naver.com으로 연락주세요.<br/>
+부족한 부분이나 더 궁금하신 내용이 있다면 [이슈](https://github.com/ssj9685/RESUME/issues)로 남겨주시겨나, ssj9685@naver.com으로 연락주세요.<br/>
 감사합니다.
