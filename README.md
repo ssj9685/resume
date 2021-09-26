@@ -5,7 +5,7 @@
 ![status](https://img.shields.io/badge/hired-brightgreen.svg)
 
 ## 소개
-![프로필이미지](https://github.com/JSpiner/RESUME/raw/master/images/profile.jpeg)
+![프로필이미지](https://user-images.githubusercontent.com/48992250/134820506-86d54aae-7989-4064-b976-452556048a71.jpg)
 - 이름: 정성민
 - 군필여부: 병역특례로 복무완료
 - 취미: 자전거, **해커톤**, 칵테일, 사격, 등산, **카페코딩**, 피아노, 달리기, 여행, 캠핑
