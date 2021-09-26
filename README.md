@@ -23,7 +23,7 @@
 <br/>
 
 ### 제강업체 입출고관리 및 공정데이터 정규화 앱
-#### 기술스택: AndroidFCM(Firebase Cloud Messaging)ZXing
+#### 기술스택: Android. FCM(Firebase Cloud Messaging)ZXing
 제강업체 입출고관리 및 공정데이터 정규화 앱
 기존에 만들었던 웹을 Android 웹뷰를 활용하여 네이티브 기능을 사용할 수 있도록 앱으로 만들었습니다. FCM API와 자체 푸쉬 서버를 활용하여 notification을 특정 사용자에게 보낼 수 있게 구현하였습니다. 또한 QR로 입출고 관리를 할 수 있도록 Zxing 라이브러리를 활용하여 인식한 문자를 바로 출력하고 데이터를 저장/전송할 수 있도록 하였습니다.
 #### 팀 구성> 안드로이드 개발1, 백엔드 개발1
