@@ -3,8 +3,6 @@
 ## 소개
 ![프로필이미지](https://user-images.githubusercontent.com/48992250/134820506-86d54aae-7989-4064-b976-452556048a71.jpg)
 - 이름: 신석진
-- 군필여부: 만기제대
-- 취미: 농구
 - Email: ssj9685@naver.com
 - GitHub: [github.com/ssj9685](https://github.com/ssj9685)
 - Blog: [velog.io/@ssj9685](https://velog.io/@ssj9685)
