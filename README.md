@@ -35,5 +35,3 @@
 
 #### 팀 구성> 프론트엔드 개발1, 백엔드 개발1
 #### Github> https://github.com/cbnu-easw2020/dt-mic
-
-감사합니다. <br/>
