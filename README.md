@@ -9,18 +9,14 @@
 - 이름: 신석진
 - 군필여부: 만기제대
 - 취미: 
-- Email: jspiner@naver.com
-- GitHub: [github.com/jspiner](https://github.com/jspiner)
-- LinkedIn: [linkedin.com/in/jspiner](https://linkedin.com/in/jspiner)
+- Email: ssj9685@naver.com
+- GitHub: [github.com/ssj9685](https://github.com/ssj9685)
+- Blog: [velog.io/@ssj9685](https://velog.io/@ssj9685)
 ```
-엔지니어로 살아가면서, 올바름을 추구하는걸 가장 큰 가치로 여기고 있습니다.
+항상 질문하고 이유를 생각하는 것을 멈추지 않으며 새로운 것이 늘 궁금하고 원리를 알아내어 구현하는 개발자 신석진입니다.
 ```
 
 ![깃허브](https://github.com/JSpiner/RESUME/raw/master/images/github.png)
-
-## 학력
-- 세종대학교 컴퓨터공학과 3학년 휴학(2015 입학)
-- 한국디지털미디어고등학교 해킹방어과 졸업(2012 ~ 2014)
 
 ## 사용 기술
 ### Android
@@ -33,12 +29,10 @@
 - lint + test code
 
 ### Backend
-클라이언트에 필요한 기술을 테스트하고 검증할 수 있을 정도의 서버 스킬을 가지고 있습니다.
-- python - flask/gunicorn
+클라이언트에서 필요한 API를 구현할 수 있고 여러 프레임워크를 사용하였습니다.
 - nodejs
-- celery 
-- rabbitmq / messageQ / redis
-- docker 
+  - aedes.js
+  - mqtt
 
 ### Frontend
 간단한 프로토타입을 만들거나, 도메인의 구현을 참고할 수 있을 정도의 스킬을 가지고 있습니다.
