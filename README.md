@@ -12,46 +12,6 @@
 항상 질문하고 이유를 생각하는 것을 멈추지 않으며 새로운 것이 늘 궁금하고 원리를 알아내어 구현하는 개발자 신석진입니다.
 ```
 
-## 사용 기술
-### Android
-- Kotlin, Kotlin DSL
-- Dagger
-- rxJava
-- Epoxy
-- MVP, MVVM, MvRx Pattern
-- DataBinding
-- lint + test code
-
-### Backend
-클라이언트에서 필요한 API를 구현할 수 있고 여러 프레임워크를 사용하였습니다.
-- nodejs
-  - aedes.js
-  - mqtt
-
-### Frontend
-간단한 프로토타입을 만들거나, 도메인의 구현을 참고할 수 있을 정도의 스킬을 가지고 있습니다.
-- React / KotlinJS
-
-그 외 흔히 채용공고에 나오는 이런 '자격요건'들을 경험 해봤습니다.
-- 팀 : 기능조직 / 목적조직 / 스쿼드
-- 배포 : 정기배포(1주) / 배포자동화 / 단계적배포
-- 실험 : AB 테스팅 / deeplink / referrer / Firebase
-- 모니터링 : Fabric / Google Analytics / Firebase Analytics
-- 커뮤니케이션 : Slack
-- 이슈관리 : Github / Jira / Trello / Asana
-- CI/CD : TravisCI / Coveralls / Jenkins / SonarQube / Actions
-- 디자인 협업 : Zeplin / Figma
-- 버전관리 : Git / GitFlow
-
-### TODO
-**새로운것**을 배우는건 언제나 즐거운 일입니다. <br/>
-현재는 아래것들을 익히고 있습니다.
-- Compose
-- Coroutine
-
-앞으로는 아래것들을 익히려고 합니다.
-- Domain Driven Design
-
 ## 프로젝트 이력
 
 <img src="https://avatars0.githubusercontent.com/u/24453230?s=200&v=4" width="80" height="80"/>
