@@ -19,6 +19,7 @@
 제강업체 입출고관리 및 공정데이터 정규화 웹서비스 구축하는 프로젝트를 진행하였습니다. 프론트엔드 개발을 담당하였습니다. Spring Boot와 잘 맞는 Thymeleaf를 활용하여 템플릿을 구성하였습니다. 입출고관리 및 공정데이터를 정규화하는 웹서비스를 제공하는 과정에 테이블 데이터 및 반복되는 데이터를 효율적으로 다루기 위한 자체 프레임워크를 제작하였습니다.
 #### 팀 구성> 프론트엔드 개발1, 백엔드 개발1
 #### Github> https://github.com/cbnu-easw2020/steel-erp
+<br/>
 
 ### 제강업체 입출고관리 및 공정데이터 정규화 앱
 #### 기술스택: AndroidFCM(Firebase Cloud Messaging)ZXing
@@ -27,6 +28,7 @@
 #### 팀 구성> 안드로이드 개발1, 백엔드 개발1
 #### Play store> https://play.google.com/store/apps/details?id=kr.easw.steelERP.app
 #### Github> https://github.com/cbnu-easw2020/steel-erp-app
+<br/>
 
 ### 실비보험 청구 간소화 소프트웨어 및 드라이브 스루 의약품 투약 및 실비보험 청구 시스템
 #### 기술스택: ReactJS, SpringBoot, Redux.js, WebSocket
