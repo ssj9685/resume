@@ -7,10 +7,8 @@
 - GitHub: [github.com/ssj9685](https://github.com/ssj9685)
 - Blog: [velog.io/@ssj9685](https://velog.io/@ssj9685)
 ```
-항상 질문하고 이유를 생각하자.
-
 안녕하세요.
-새로운 것이 늘 궁금하고 원리를 알아내어 구현하는 개발자 신석진입니다.
+항상 질문하고 이유를 생각하는 개발자 신석진입니다.
 ```
 
 ## 프로젝트
