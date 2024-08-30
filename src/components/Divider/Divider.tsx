@@ -1,34 +1,28 @@
 import { css } from "@emotion/css";
-import { ReactElement } from "react";
+
+type DividerType = "horizontal" | "vertical";
+
+const styles = {
+  horizontal: (thickness: number, length?: number) => css`
+    display: block;
+    width: ${length ? `${length}px` : "100%"};
+    border-bottom: ${thickness}px solid #c0c0c0;
+    margin: 24px 0;
+  `,
+  vertical: (thickness: number, length?: number) => css`
+    display: inline-block;
+    height: ${length ? `${length}px` : "100%"};
+    border-right: ${thickness}px solid #c0c0c0;
+    margin: 24px 0;
+  `,
+};
 
 export default function Divider(props: {
-  type: "horizontal" | "vertical";
+  type: DividerType;
   length?: number;
   thickness?: number;
 }) {
   const { type, length, thickness = 1 } = props;
 
-  const map: { [key in typeof type]: ReactElement } = {
-    horizontal: (
-      <div
-        className={css`
-          width: ${length ? `${length}px` : "100%"};
-          background: #c0c0c0;
-          height: ${thickness}px;
-          margin: 4px 0;
-        `}
-      />
-    ),
-    vertical: (
-      <span
-        className={css`
-          height: ${length ? `${length}px` : "100%"};
-          background: #aeaeae;
-          width: ${thickness}px;
-        `}
-      />
-    ),
-  };
-
-  return map[type];
+  return <div className={styles[type](thickness, length)} />;
 }

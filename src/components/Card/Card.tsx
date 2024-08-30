@@ -6,7 +6,7 @@ export default function Card(props: { title: string; children: ReactNode }) {
 
   return (
     <section className={cardStyle.section}>
-      <h2>{title}</h2>
+      <h3>{title}</h3>
       {children}
     </section>
   );

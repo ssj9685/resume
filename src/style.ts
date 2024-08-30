@@ -2,29 +2,42 @@ import { css } from "@emotion/css";
 
 export const styles = {
   container: css`
-    margin: 0 auto;
-    padding: 2rem;
-    font-family: "Inter", sans-serif;
+    width: 100%;
+    display: flex;
+    place-content: center;
+    font-family: Pretendard, Inter;
+  `,
+  content: css`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     color: #333;
     line-height: 1.6;
-    width: 1000px;
+    max-width: 850px;
 
-    @page {
-      size: A4;
+    @media print {
+      & {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 0;
+        font-size: 12pt;
+      }
     }
   `,
   header: css`
     padding: 2rem;
     border-radius: 10px;
-    margin-bottom: 2rem;
     display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
     justify-content: space-between;
     align-items: center;
   `,
   contact: css`
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 8px;
   `,
   name: css`
     font-size: 2.5rem;
@@ -43,12 +56,10 @@ export const styles = {
     font-size: 0.9rem;
   `,
   main: css`
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr;
-    }
   `,
   experienceTitle: css`
     font-size: 1.1rem;
@@ -85,5 +96,123 @@ export const styles = {
     padding: 1rem;
     margin: 1rem 0;
     border-radius: 0 5px 5px 0;
+  `,
+  global: css`
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    a {
+      color: black;
+    }
+
+    a:visited {
+      color: black;
+    }
+
+    body,
+    html {
+      height: 100%;
+      scroll-behavior: smooth;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+      font-weight: bold;
+      color: #222;
+    }
+
+    h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      font-weight: 800;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      line-height: 1.3;
+      margin-bottom: 0.8rem;
+      font-weight: 700;
+    }
+
+    h3 {
+      font-size: 2rem;
+      line-height: 1.4;
+      margin-bottom: 0.6rem;
+      font-weight: 600;
+    }
+
+    h4 {
+      font-size: 1.75rem;
+      line-height: 1.5;
+      margin-bottom: 0.4rem;
+      font-weight: 500;
+    }
+
+    h5 {
+      font-size: 1.5rem;
+      line-height: 1.6;
+      margin-bottom: 0.2rem;
+      font-weight: 400;
+    }
+
+    h6 {
+      font-size: 1.25rem;
+      line-height: 1.7;
+      margin-bottom: 0.1rem;
+      font-weight: 300;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      text-transform: capitalize;
+      letter-spacing: 0.5px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      h3 {
+        font-size: 1.75rem;
+      }
+
+      h4 {
+        font-size: 1.5rem;
+      }
+
+      h5 {
+        font-size: 1.25rem;
+      }
+
+      h6 {
+        font-size: 1rem;
+      }
+    }
+
+    @font-face {
+      font-family: "Pretendard";
+      src: url("./assets/Pretendard.woff") format("woff");
+      font-weight: 400;
+      font-style: normal;
+    }
   `,
 };
