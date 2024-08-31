@@ -1,4 +1,4 @@
-import { css } from "@emotion/css";
+import { css, cx } from "@emotion/css";
 
 type DividerType = "horizontal" | "vertical";
 
@@ -21,8 +21,9 @@ export default function Divider(props: {
   type: DividerType;
   length?: number;
   thickness?: number;
+  className?: string;
 }) {
-  const { type, length, thickness = 1 } = props;
+  const { type, length, thickness = 1, className } = props;
 
-  return <div className={styles[type](thickness, length)} />;
+  return <div className={cx(styles[type](thickness, length), className)} />;
 }

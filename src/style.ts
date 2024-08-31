@@ -13,7 +13,7 @@ export const styles = {
     flex-direction: column;
     color: #333;
     line-height: 1.6;
-    max-width: 850px;
+    max-width: 21cm;
 
     @media print {
       & {
