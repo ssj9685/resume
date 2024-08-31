@@ -1,50 +1,121 @@
-# React + TypeScript + Vite
+# 신석진
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+프론트엔드 개발자
 
-Currently, two official plugins are available:
+## 연락처
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Email**: [ssj2648597@gmail.com](mailto:ssj2648597@gmail.com)
+- **Github**: [github.com/ssj9685](https://github.com/ssj9685)
+- **LinkedIn**: [linkedin.com/in/ssj9685](https://linkedin.com/in/ssj9685)
+- **Blog**: [velog.io/@ssj9685](https://velog.io/@ssj9685)
 
-## Expanding the ESLint configuration
+## 소개
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+3년차 프론트엔드 엔지니어로, React와 TypeScript를 주로 사용합니다.
+UI/UX 최적화와 최신 기술 도입에 열정을 가지며, 지속적인 학습을 통해 역량을 키우고 있습니다.
+자동화나 리팩토링 등의 팀의 생산성을 올릴 수 있는 방안을 찾고 적용하는 것을 좋아합니다.
+크로스 플랫폼 및 웹뷰와 통합하여 개발하는 것에 익숙합니다.
 
-- Configure the top-level `parserOptions` property like this:
+## 경력사항
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 주식회사 에이피알
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+프론트엔드 개발자 | 2023년 6월 - 현재
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- 앱테크 게임 전체 프로젝트 설계 및 개발
+- 웹뷰 내 서비스 개발
+- CI/CD 프로세스 개선
+- 개발자 경험 개선을 위한 리팩토링 및 유틸 개발
+- 레거시 코드 개선 및 아키텍처 개선
+- 2024년 상반기 우수사원 수상
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### (주)에바(EVAR)
+
+프론트엔드 개발자 | 2022년 1월 - 2023년 6월
+
+- 전기차 충전기 연동 앱 설계, 개발 및 운영
+- 관리자 용 충전기 설정 앱 개발
+- 기존 관리자 페이지 Vue.js -> Next.js로 마이그레이션
+- 앱/웹 CI/CD 환경 구축
+
+## 프로젝트
+
+### 에이지알 프렌즈 & 코끼리 게임 개발
+
+에이피알 | 앱 내 웹뷰 기반의 앱테크 게임 서비스
+
+기술 스택 | React.js, Emotion, Valtio
+
+- 출시 3주 후 MAU 25%, 월 이용시간 142% 상승
+- GC 처리 방식차이에 의한 메모리 누수 디버깅 및 해결
+- 웹뷰 및 CDN 캐시 오류를 해결하기 위한 CI/CD 구축
+- CSS와 엘리먼트 동작 호환 문제 해결
+- 다국가 사용자 대응 및 어뷰징 방지를 위한 서버 사용시간 동기 처리
+
+### 앱 내부 커뮤니티 및 포인트 샵 개발
+
+에이피알 | 사용자 간 소통의 장, 활동하면서 얻은 포인트를 쓸 수 있는 서비스
+
+기술 스택 | Next.js, styled-components, TanStack Query
+
+- 백화 현상 방지 로직 추가 및 재실행 로직 개발
+- 유저 경험 개선을 위한 낙관적 업데이트 사용 도입
+- 쿠키 활용 서버 측 i18n 적용
+- 기존 코드 유지보수 및 리팩토링
+- 테스트 코드 유지보수 및 테스트 편의성 함수 개발
+
+### 앱 관리 페이지 개발
+
+에이피알 | 앱을 사용하는 사용자들 및 이벤트, 앱 기능들을 관리하기 위한 페이지
+
+기술 스택 | React.js, styled-components, TanStack Query
+
+- 표 생성마다 써야하는 코드를 130->19줄로 단축하도록 리팩토링 진행
+- 모달, 토스트 생성할 때마다 불필요한 코드가 생기지 않도록 유틸 개발
+- 유지보수 되지 않는 CRA에서 Vite로 마이그레이션
+
+### 전기차 충전기 연동 앱 개발 및 운영
+
+에바 | 충전기 정보 확인 및 원격 충전 시작이 가능한 앱
+
+기술 스택 | Flutter, GetX
+
+- 앱이 없던 환경에서 AOS, iOS, Web 3개의 플랫폼에 출시 및 유지보수
+- 서브모듈 활용 Core 로직 분리 후 UI 커스텀 기능 타사에 제공
+- Flutter Web을 지원하지 않던 결제모듈 사용을 위한 유틸 개발
+- Fastlane을 활용한 앱 CI/CD 구축
+- 미국/일본 사용자 대응 i18n 적용
+
+### 전기차 충전기 관리자 페이지 개편
+
+에바 | 충전기의 원격 조작, 설정 및 위치 확인을 위한 페이지
+
+기술 스택 | Next.js, MUI
+
+- 기존 레거시 Vue.js 2를 Next.js로 마이그레이션
+- 운영/개발 환경 분리 및 CI/CD 적용
+- 충전기 관리 지도 개발
+- 미국/일본 관리자 대응 i18n 적용
+
+## 학력
+
+### 충북대학교 대학원
+
+정보통신공학과
+
+- [WebRTC 관련 연구](https://drive.google.com/file/d/1uDgw4A-2gSQuC6U2OzgKC_MPuYjPwOLY/view?usp=sharing)
+- [MQTT KAFKA 관련 연구](https://www.youtube.com/watch?v=h49x2A9Vjbs)
+
+### 충북대학교
+
+정보통신공학과 | 임베디드 및 응용 SW 분야 연구
+
+## 활동
+
+### 우당탕탕 도서관
+
+커뮤니티 | 2024년 2월-6월
+
+- 블로그 주 1회 운영
+- 커뮤니티 리딩
+- 내부 컨퍼런스 개최 및 발표 ([발표자료](https://uddang-con.vercel.app/))
