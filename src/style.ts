@@ -210,7 +210,7 @@ export const styles = {
 
     @font-face {
       font-family: "Pretendard";
-      src: url("./assets/Pretendard.woff") format("woff");
+      src: url("/resume/Pretendard.woff") format("woff");
       font-weight: 400;
       font-style: normal;
     }
