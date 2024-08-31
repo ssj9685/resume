@@ -123,7 +123,6 @@ export default function Resume() {
               "서브모듈 활용 Core 로직 분리 후 UI 커스텀 기능 타사에 제공",
               "Flutter Web을 지원하지 않던 결제모듈 사용을 위한 유틸 개발",
               "Fastlane을 활용한 앱 CI/CD 구축",
-              "미국/일본 사용자 대응 i18n 적용",
             ]}
           />
           <Divider type="horizontal" />
@@ -135,7 +134,6 @@ export default function Resume() {
               "기존 레거시 Vue.js 2를 Next.js로 마이그레이션",
               "운영/개발 환경 분리 및 CI/CD 적용",
               "충전기 관리 지도 개발",
-              "미국/일본 관리자 대응 i18n 적용",
             ]}
           />
         </Card>
@@ -166,8 +164,7 @@ export default function Resume() {
           <Detail text="커뮤니티 | 2024년 2월-6월" />
           <List
             contents={[
-              "블로그 주 1회 운영",
-              "커뮤니티 리딩",
+              "블로그 주 1회 운영 및 커뮤니티 리딩",
               <>
                 내부 컨퍼런스 개최 및 발표(
                 <a href="https://uddang-con.vercel.app" target="_blank">
