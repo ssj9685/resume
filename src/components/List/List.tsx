@@ -6,8 +6,8 @@ export default function List(props: { contents: ReactNode[] }) {
 
   return (
     <ul className={listStyle.list}>
-      {contents.map((content) => (
-        <li key={content?.toString()}>{content}</li>
+      {contents.map((content, index) => (
+        <li key={index}>{content}</li>
       ))}
     </ul>
   );

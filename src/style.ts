@@ -213,6 +213,7 @@ export const styles = {
       src: url("/resume/Pretendard.woff") format("woff");
       font-weight: 400;
       font-style: normal;
+      font-display: swap;
     }
   `,
 };
