@@ -18,6 +18,7 @@ export default function Resume() {
             <div
               className={css`
                 display: flex;
+                flex-wrap: wrap;
                 place-items: end;
                 gap: 24px;
               `}
