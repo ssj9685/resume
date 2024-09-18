@@ -34,6 +34,9 @@ export const styles = {
     justify-content: space-between;
     align-items: center;
   `,
+  profile: css`
+    display: flex;
+  `,
   contact: css`
     display: grid;
     grid-template-columns: 1fr 2fr;
