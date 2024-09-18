@@ -15,9 +15,53 @@ export default function Resume() {
       <div className={styles.content}>
         <header className={styles.header}>
           <div className={styles.profile}>
-            <div>
-              <h1 className={styles.name}>신석진</h1>
-              <p className={styles.title}>프론트엔드 개발자</p>
+            <div
+              className={css`
+                display: flex;
+                place-items: end;
+                gap: 24px;
+              `}
+            >
+              <img
+                id="profile-popover"
+                // @ts-ignore
+                popover={"auto"}
+                src="/resume/profile.jpg"
+                width={"90%"}
+                height={"95%"}
+                className={css`
+                  object-fit: cover;
+                  cursor: pointer;
+                `}
+                onClick={(e) => e.currentTarget.hidePopover()}
+              />
+              <button
+                className={css`
+                  border: none;
+                  outline: none;
+                  background: none;
+                  cursor: pointer;
+                `}
+                //@ts-ignore
+                popoverTarget={"profile-popover"}
+              >
+                <img
+                  alt="프로필사진"
+                  src="/resume/profile2.jpg"
+                  width={140}
+                  height={140}
+                  className={css`
+                    object-fit: cover;
+                    border-radius: 50% 50% 0 50%;
+                    margin-left: -28px;
+                  `}
+                />
+              </button>
+
+              <div>
+                <h1 className={styles.name}>신석진</h1>
+                <p className={styles.title}>프론트엔드 개발자</p>
+              </div>
             </div>
           </div>
           <div className={styles.contact}>
