@@ -461,7 +461,7 @@ export default function Resume() {
                 <br />(
                 <Link href="https://uddang-con.vercel.app" text="발표자료" />
                 &nbsp;/&nbsp;
-                <Link href="https://uddang-con.vercel.app" text="발표영상" />)
+                <Link href="https://youtu.be/CJvTIpR1e5Q" text="발표영상" />)
               </>,
             ]}
           />
