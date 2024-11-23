@@ -8,6 +8,7 @@ import { styles } from "./style";
 import Link from "./components/Link/Link";
 import Flex from "./components/Flex/Flex";
 import Gap from "./components/Gap/Gap";
+import Profile from "./components/Profile/Profile";
 
 export default function Resume() {
   return (
@@ -23,42 +24,7 @@ export default function Resume() {
                 gap: 24px;
               `}
             >
-              <img
-                id="profile-popover"
-                // @ts-ignore
-                popover={"auto"}
-                src="/resume/profile.jpg"
-                width={"90%"}
-                height={"95%"}
-                className={css`
-                  object-fit: cover;
-                  cursor: pointer;
-                `}
-                onClick={(e) => e.currentTarget.hidePopover()}
-              />
-              <button
-                className={css`
-                  border: none;
-                  outline: none;
-                  background: none;
-                  cursor: pointer;
-                `}
-                //@ts-ignore
-                popoverTarget={"profile-popover"}
-              >
-                <img
-                  alt="프로필사진"
-                  src="/resume/profile2.jpg"
-                  width={140}
-                  height={140}
-                  className={css`
-                    object-fit: cover;
-                    border-radius: 50% 50% 0 50%;
-                    margin-left: -28px;
-                  `}
-                />
-              </button>
-
+              <Profile />
               <div>
                 <h1 className={styles.name}>신석진</h1>
                 <p className={styles.title}>프론트엔드 개발자</p>
@@ -84,24 +50,22 @@ export default function Resume() {
         </header>
         <Card title="">
           <p>
-            안녕하세요. 경험을 중요시하는 3년차 프론트엔드 엔지니어
-            신석진입니다.
+            안녕하세요. <br />
+            경험과 소통을 중요시하는 3년차 프론트엔드 개발자 신석진입니다.
             <br />
             <br />
-            서비스를 만들고 직접 사용하는 것을 즐기며, 사용자와 개발자 모두의
-            경험을 개선하기 위해 동료와 소통하며 문제 상황을 해결하는 것을
-            즐깁니다.
+            서비스를 만들고 직접 사용하는 것을 즐기며, 사용자와 개발자의 경험을
+            개선하기 위해 기획, 디자인, 백엔드 동료들과 소통하며 문제 상황을
+            해결하는 것을 즐깁니다.
             <br />
             <br />
-            여러 프로젝트를 진행하며 웹앱에서 발생하는 메모리 관련 이슈를
-            해결하여 사용 경험을 개선하고 다국가 서비스에서 i18next를 사용한
-            번역 리소스의 관리나 테스트에 관해 고민하여 동료들의 개발 경험을
-            개선했습니다.
+            여러 프로젝트를 진행하며 웹앱에서 발생하는 네트워크와 메모리 관련
+            이슈를 해결하여 사용 경험을 개선하고 아키텍쳐와 리팩토링 그리고
+            테스트에 관해 고민하여 동료들의 개발 경험을 개선 해나가고 있습니다.
           </p>
         </Card>
 
         <Card title="기술">
-          <Detail text="실무에서 사용한 기술입니다." />
           <Gap type="vertical" size={8} />
           <div
             className={css`
@@ -121,36 +85,44 @@ export default function Resume() {
             `}
           >
             <Flex direction="column">
-              <SubTitle text="주요 기술" />
+              <h6>주요 기술</h6>
               <List contents={["React.js", "Next.js", "Flutter"]} />
             </Flex>
             <Flex direction="column">
-              <SubTitle text="스타일" />
-              <List contents={["emotion", "styled-components", "MUI"]} />
-            </Flex>
-            <Flex direction="column">
-              <SubTitle text="언어" />
+              <h6>언어</h6>
               <List contents={["Typescript", "Javascript", "Dart"]} />
             </Flex>
             <Flex direction="column">
-              <SubTitle text="상태관리" />
-              <List
-                contents={["TanStack Query", "Valtio", "useSyncExternalStore"]}
-              />
+              <h6>상태관리</h6>
+              <List contents={["TanStack Query", "Valtio", "zustand"]} />
+            </Flex>
+
+            <Flex direction="column">
+              <h6>인프라</h6>
+              <List contents={["CloudFront", "S3", "ECS", "Lambda"]} />
             </Flex>
             <Flex direction="column">
-              <SubTitle text="테스트" />
+              <h6>테스트</h6>
               <List
                 contents={[
                   "Jest",
+                  "Playwright",
                   "Mock Service Worker",
                   "React Testing Library",
                 ]}
               />
             </Flex>
             <Flex direction="column">
-              <SubTitle text="CI/CD" />
+              <h6>CI/CD</h6>
               <List contents={["Jenkins", "Fastlane", "Github actions"]} />
+            </Flex>
+            <Flex direction="column">
+              <h6>스타일</h6>
+              <List contents={["emotion", "styled-components"]} />
+            </Flex>
+            <Flex direction="column">
+              <h6>모니터링</h6>
+              <List contents={["Sentry"]} />
             </Flex>
           </div>
           <Divider type="horizontal" />
@@ -172,6 +144,7 @@ export default function Resume() {
               "웹뷰 내의 게임 전체 프로젝트 설계 및 개발",
               "다국가 웹뷰 서비스 개발 및 서비스 운영을 위한 관리자 페이지 개발",
               "Jenkins CI/CD 프로세스 개선 및 유지보수",
+              "ECS 기반 프론트 인프라 관리 및 성능 개선",
               "테스트 코드 작성 및 레거시 코드 리팩토링",
               "사내 프론트엔드 개발자 스터디 리딩",
               "2024년 상반기 우수사원 수상",
@@ -246,9 +219,9 @@ export default function Resume() {
           출시 후 3주 동안 MAU 25%, 월 이용시간 142% 상승
           <Divider type="horizontal" />
           <SubTitle text="메디큐브톡 & 포인트샵 개발" />
-          <Detail text="2023년 07월 - 2024년 01월" />
+          <Detail text="2023년 07월 - 현재" />
           <Detail text="에이피알 | 사용자 간 소통의 장, 활동하면서 얻은 포인트를 쓸 수 있는 서비스" />
-          <Detail text="기술 스택 | Next.js, Flutter, styled-components, TanStack Query, Typescript, Jest, Mock Service Worker, Jenkins, ECS" />
+          <Detail text="기술 스택 | Next.js, Flutter, styled-components, TanStack Query, Typescript, Jest, Mock Service Worker, Jenkins, Playwright, Sentry ECS" />
           <Gap type="vertical" size={16} />
           [설명]
           <br />
@@ -273,13 +246,16 @@ export default function Resume() {
           <Gap type="vertical" size={16} />
           [개발]
           <br />
-          다국가 서비스 개발 및 유닛 테스트를 통한 안정적 개발 진행
+          SSR을 통한 유저 경험 개선과 다국가 서비스 개발 및 유닛/e2e 테스트를
+          통한 안정적 개발 진행
           <List
             contents={[
               "Next.js, styled-components, Typescript 사용하여 SSR 기반 UI 개발",
-              "Jest 기반 유닛 테스트 작성",
-              "i18next 사용하여 다국어 서비스 제공",
               "Tanstack Query의 mutation을 활용한 낙관적 업데이트 적용",
+              "Jest 기반 유닛 테스트 작성",
+              "Playwright 기반 e2e 테스트 작성",
+              "i18next 사용하여 다국어 서비스 제공",
+              "쿠키를 활용한 전역 상태 관리 및 공용 getServersideProps 적용",
             ]}
           />
           [경험]
@@ -287,22 +263,27 @@ export default function Resume() {
           다국가 서비스에서의 사용자 경험과 개발자 경험을 개선
           <List
             contents={[
+              "Next.js 이미지 최적화에 메모리 누수가 발생, 이를 lambda@edge를 활용한 이미지 리사이징을 적용하여 해결",
               "Mock service worker를 도입하여 테스트 코드에서 모킹 코드를 제거하여 개발 경험을 개선",
-              "사용자 페이지 번역시 깜빡이는 현상을 쿠키를 활용한 서버 측 i18n을 적용하여 개선",
+              "앱 상태 바 높이의 레이아웃 시프트와 번역 FOUC를 쿠키를 활용한 SSR 및 i18next를 적용하여 개선",
               "테스트 코드에 다국어 관련 언어 중복을 i18n 키 값을 활용한 유틸을 제작하여 개선",
-              "백화 현상을 프론트에서 메모리를 관리하고 Flutter에서 WebResource 에러시 재실행하도록 하여 사용자 경험 개선",
+              "백화현상이 발생했을 때 Flutter에서 WebResource 에러로 인지하여 재실행하도록 하여 사용자 경험 개선",
             ]}
           />
           [성과]
           <br />
-          일별 게시글 수 993건 {"->"} 12602건
+          ECS 시간당 메모리 평균 2~3% 유지
           <br />
-          일별 주문 수 40건 {"->"} 2157건
+          일별 Cloudfront 전송 비용 400G 감소
+          <br />
+          일별 주문 수 평균 40건 {"->"} 2157건
+          <br />
+          일별 게시글 수 평균 993건 {"->"} 12602건
           <Divider type="horizontal" />
           <SubTitle text="앱 관리 페이지 개발" />
           <Detail text="2023년 06월 - 현재" />
           <Detail text="에이피알 | 앱을 사용하는 사용자들 및 이벤트, 앱 기능들을 관리하기 위한 페이지" />
-          <Detail text="기술 스택 | React.js, styled-components, TanStack Query, useSyncExternalStore, Typescript, Vite, Vitest " />
+          <Detail text="기술 스택 | React.js, styled-components, TanStack Query, Zustand, Typescript, Vite, Vitest " />
           <Gap type="vertical" size={16} />
           [설명]
           <br />
@@ -330,7 +311,7 @@ export default function Resume() {
             contents={[
               "아이콘 리소스를 import 하고 경로를 알기 힘든 문제를 타입스크립트로 관리하도록 리팩토링",
               "토스트에 필요한 상태를 반복해서 쓰던 것을 정해진 타입별로 쓸 수 있게 유틸 함수로 리팩토링",
-              "모달을 관리하는 상태가 반복되는 것을 useSyncExternalStore 기반의 훅으로 리팩토링",
+              "모달을 관리하는 상태가 반복되는 것을 외부에서 사용가능한 훅 형태로 리팩토링",
               "표 생성마다 반복되는 코드들을 훅을 사용하여 리팩토링하여 130->19줄로 단축",
             ]}
           />
