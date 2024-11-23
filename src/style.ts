@@ -108,11 +108,11 @@ export const styles = {
     }
 
     a {
-      color: black;
+      color: blue;
     }
 
     a:visited {
-      color: black;
+      color: blue;
     }
 
     body,
