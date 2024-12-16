@@ -51,7 +51,8 @@ export default function Resume() {
         <Card title="">
           <p>
             안녕하세요. <br />
-            경험과 소통을 중요시하는 3년차 프론트엔드 개발자 신석진입니다.
+            경험과 소통을 중요시하는 개발자 신석진입니다. <br />
+            플러터와 리액트를 사용한 웹뷰 개발에 익숙합니다.
             <br />
             <br />
             서비스를 만들고 직접 사용하는 것을 즐기며, 사용자와 개발자의 경험을
@@ -61,7 +62,8 @@ export default function Resume() {
             <br />
             여러 프로젝트를 진행하며 웹앱에서 발생하는 네트워크와 메모리 관련
             이슈를 해결하여 사용 경험을 개선하고 아키텍쳐와 리팩토링 그리고
-            테스트에 관해 고민하여 동료들의 개발 경험을 개선 해나가고 있습니다.
+            테스트에 관해 고민하고 코드리뷰를 통해 동료들과 개발 경험을 개선
+            해나가고 있습니다.
           </p>
         </Card>
 
@@ -175,18 +177,16 @@ export default function Resume() {
           증대시키고 공유 기능을 통한 신규 이용자 유입을 유도하기 위한 서비스
           <br />
           <Link
+            href="https://photos.app.goo.gl/2VTCj1XzuRJKbYtJ9"
+            text="동작 영상"
+          />
+          <Link
             href="https://apps.apple.com/kr/app/%EC%97%90%EC%9D%B4%EC%A7%80%EC%95%8C-%EB%A9%94%EB%94%94%ED%81%90%EB%B8%8C-%EB%94%94%EC%A7%80%ED%84%B8%ED%81%B4%EB%A6%AC%EB%8B%89-age-r/id1610283967"
             text="App Store"
           />
-          &nbsp;/&nbsp;
           <Link
             href="https://play.google.com/store/apps/details?id=com.apr.digitalclinic&hl=ko"
             text="Google Play"
-          />
-          <br />
-          <Link
-            href="https://photos.app.goo.gl/2VTCj1XzuRJKbYtJ9"
-            text="영상링크"
           />
           <Gap type="vertical" size={12} />
           [개발]
@@ -230,18 +230,16 @@ export default function Resume() {
           수 있도록 해서 구매를 유도하는 것이 목적인 서비스
           <br />
           <Link
+            href="https://photos.app.goo.gl/WTGVJQXgH31HMBXu9"
+            text="동작 영상"
+          />
+          <Link
             href="https://apps.apple.com/kr/app/%EC%97%90%EC%9D%B4%EC%A7%80%EC%95%8C-%EB%A9%94%EB%94%94%ED%81%90%EB%B8%8C-%EB%94%94%EC%A7%80%ED%84%B8%ED%81%B4%EB%A6%AC%EB%8B%89-age-r/id1610283967"
             text="App Store"
           />
-          &nbsp;/&nbsp;
           <Link
             href="https://play.google.com/store/apps/details?id=com.apr.digitalclinic&hl=ko"
             text="Google Play"
-          />
-          <br />
-          <Link
-            href="https://photos.app.goo.gl/WTGVJQXgH31HMBXu9"
-            text="영상링크"
           />
           <Gap type="vertical" size={16} />
           [개발]
@@ -328,21 +326,18 @@ export default function Resume() {
           충전기를 사용하고 결제 가능
           <br />
           <Link
+            href="https://photos.app.goo.gl/juz6ju37W3wmeurc7"
+            text="동작 영상"
+          />
+          <Link
             href="https://apps.apple.com/kr/app/evpay/id1619603697"
             text="App Store"
           />
-          &nbsp;/&nbsp;
           <Link
             href="https://play.google.com/store/apps/details?id=kr.co.evar.evpay"
             text="Google Play"
           />
-          &nbsp;/&nbsp;
           <Link href="https://evpay.co.kr" text="Web" />
-          <br />
-          <Link
-            href="https://photos.app.goo.gl/juz6ju37W3wmeurc7"
-            text="영상링크"
-          />
           <Gap type="vertical" size={16} />
           [개발]
           <br />
@@ -428,6 +423,18 @@ export default function Resume() {
         </Card>
 
         <Card title="활동">
+          <SubTitle text="@ga-ut/store" />
+          <Detail text="오픈소스 | 2024년 11월-12월" />
+          <p>리액트에서 사용가능한 전역상태 라이브러리</p>
+          <List
+            contents={[
+              "단순한 문법과 보일러 플레이트 제거로 개발자 경험 개선",
+              "타입 안정성 및 자동 랜더링 최적화",
+              "여러 상황의 테스트 코드 제공",
+              <Link href="https://github.com/ga-ut/store" text="Github 링크" />,
+            ]}
+          />
+          <Divider type="horizontal" />
           <SubTitle text="우당탕탕 도서관" />
           <Detail text="커뮤니티 | 2024년 2월-6월" />
           <p>
@@ -437,13 +444,25 @@ export default function Resume() {
           <List
             contents={[
               "블로그 주 1회 운영 및 커뮤니티 리딩",
+              "내부 컨퍼런스 개최 및 발표",
               <>
-                내부 컨퍼런스 개최 및 발표
-                <br />(
                 <Link href="https://uddang-con.vercel.app" text="발표자료" />
-                &nbsp;/&nbsp;
-                <Link href="https://youtu.be/CJvTIpR1e5Q" text="발표영상" />)
+                <Link href="https://youtu.be/CJvTIpR1e5Q" text="발표영상" />
               </>,
+            ]}
+          />
+          <Divider type="horizontal" />
+          <SubTitle text="Yatata" />
+          <Detail text="프로젝트 | 2021년 4월-9월" />
+          <p>외부 라이브러리 없는 자체 구현 Websocket 및 WebRTC 프로젝트</p>
+          <List
+            contents={[
+              "정적 리소스 제공, 로깅, 소켓 관리, Websocket, WebRTC 구현",
+              "Custom element 형태로 UI 제공",
+              <Link
+                href="https://github.com/ssj9685/yatata"
+                text="Github 링크"
+              />,
             ]}
           />
         </Card>
@@ -480,14 +499,14 @@ export default function Resume() {
             <br />
             <br />
             <strong>
-              <i>새로운 기술 트렌드에 대한 호기심이 큽니다.</i>
+              <i>새로운 기술들과 원리에 대한 호기심이 큽니다.</i>
             </strong>
             <br />
             저는 새로운 기술에 강한 관심을 가지고 있으며, 이를 직접 사용해보는
-            것을 좋아합니다. 사용하고 있는 도구들을 기초부터 이해하고, 필요성이
-            무엇인지 깊이 고민하는 과정을 즐깁니다. README 문서를 주의 깊게
-            읽어보며 다양한 개발자들의 철학을 이해하고, 발견한 문제점에 대해서는
-            직접 이슈를 등록하기도 합니다.
+            것을 좋아합니다. 사용하고 있는 도구들을 기초부터 이해하고, 원리가
+            무엇인지 깊이 고민하는 과정을 즐깁니다. 기존에 사용하던 라이브러리에
+            대해서도 의문을 가지고 더 나은 방법은 없는지 실제로 구현해보고
+            의문을 해결합니다.
           </p>
         </Card>
       </div>
