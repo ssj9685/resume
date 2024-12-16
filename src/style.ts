@@ -39,7 +39,7 @@ export const styles = {
   `,
   contact: css`
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 64px 1fr;
     gap: 8px;
   `,
   name: css`
@@ -108,11 +108,19 @@ export const styles = {
     }
 
     a {
-      color: blue;
+      color: #2e2e2e;
+      text-decoration: underline;
+      position: relative;
+      padding-left: 24px;
+      padding-right: 8px;
     }
 
-    a:visited {
-      color: blue;
+    a:before {
+      content: "🔗";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
     body,
@@ -181,7 +189,6 @@ export const styles = {
     h4,
     h5,
     h6 {
-      text-transform: capitalize;
       letter-spacing: 0.5px;
     }
 
