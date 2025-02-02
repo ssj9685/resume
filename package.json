@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "npm i yarn -g && yarn && yarn build"
+    "deploy": "npm i bun -g && bun && bun build"
   },
   "dependencies": {
     "@emotion/css": "^11.13.0",
@@ -28,6 +28,5 @@
     "typescript": "^5.6.2",
     "typescript-eslint": "^8.6.0",
     "vite": "^5.4.6"
-  },
-  "packageManager": "yarn@4.5.2"
+  }
 }
