@@ -7,7 +7,7 @@ import SubTitle from "./components/SubTitle/SubTitle";
 import { styles } from "./style";
 import Link from "./components/Link/Link";
 import Flex from "./components/Flex/Flex";
-import Gap from "./components/Gap/Gap";
+import Gap from "./components/Spacing/Spacing";
 import Profile from "./components/Profile/Profile";
 
 export default function Resume() {

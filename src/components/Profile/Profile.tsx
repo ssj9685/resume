@@ -7,7 +7,7 @@ export default function Profile() {
         id="profile-popover"
         //@ts-expect-error popover
         popover={"auto"}
-        src="/resume/profile.jpg"
+        src="profile.jpg"
         width={"90%"}
         height={"95%"}
         className={css`
@@ -28,7 +28,7 @@ export default function Profile() {
       >
         <img
           alt="프로필사진"
-          src="/resume/profile2.jpg"
+          src="profile2.jpg"
           width={140}
           height={140}
           className={css`

@@ -220,7 +220,7 @@ export const styles = {
 
     @font-face {
       font-family: "Pretendard";
-      src: url("/resume/Pretendard.woff") format("woff");
+      src: url("Pretendard.woff") format("woff");
       font-weight: 400;
       font-style: normal;
       font-display: swap;
