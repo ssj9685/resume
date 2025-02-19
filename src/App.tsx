@@ -8,7 +8,6 @@ import { styles } from "./style";
 import Link from "./components/Link/Link";
 import Flex from "./components/Flex/Flex";
 import Gap from "./components/Spacing/Spacing";
-import Profile from "./components/Profile/Profile";
 
 export default function Resume() {
   return (
@@ -24,35 +23,18 @@ export default function Resume() {
                 gap: 24px;
               `}
             >
-              <Profile />
               <div>
                 <h1 className={styles.name}>신석진</h1>
                 <p className={styles.title}>프론트엔드 개발자</p>
               </div>
             </div>
           </div>
-          <div className={styles.contact}>
-            <strong>Email</strong>
-            <Link
-              href="mailto:ssj2648597@gmail.com"
-              text="ssj2648597@gmail.com"
-            />
-            <strong>Github</strong>
-            <Link href="https://github.com/ssj9685" text="github.com/ssj9685" />
-            <strong>LinkedIn</strong>
-            <Link
-              href="https://linkedin.com/in/ssj9685"
-              text="linkedin.com/in/ssj9685"
-            />
-            <strong>Blog</strong>
-            <Link href="https://velog.io/@ssj9685" text="velog.io/@ssj9685" />
-          </div>
         </header>
         <Card title="">
           <p>
-            안녕하세요. <br />
-            경험과 소통을 중요시하는 개발자 신석진입니다. <br />
-            플러터와 리액트를 사용한 웹뷰 개발에 익숙합니다.
+            안녕하세요.
+            <br />
+            경험과 소통을 중요시하는 개발자 신석진입니다.
             <br />
             <br />
             서비스를 만들고 직접 사용하는 것을 즐기며, 사용자와 개발자의 경험을
@@ -67,77 +49,6 @@ export default function Resume() {
           </p>
         </Card>
 
-        <Card title="기술">
-          <Gap type="vertical" size={8} />
-          <div
-            className={css`
-              display: grid;
-              grid-template-columns: repeat(3, 1fr);
-
-              @media screen and (max-width: 425px) {
-                grid-template-columns: repeat(2, 1fr);
-              }
-
-              @media screen and (max-width: 375px) {
-                display: grid;
-                overflow: auto;
-                grid-template-rows: 1fr;
-                grid-template-columns: 1fr;
-              }
-            `}
-          >
-            <Flex direction="column">
-              <h6>주요 기술</h6>
-              <List contents={["React.js", "Next.js", "Flutter"]} />
-            </Flex>
-            <Flex direction="column">
-              <h6>언어</h6>
-              <List contents={["Typescript", "Javascript", "Dart"]} />
-            </Flex>
-            <Flex direction="column">
-              <h6>상태관리</h6>
-              <List contents={["TanStack Query", "Valtio", "zustand"]} />
-            </Flex>
-
-            <Flex direction="column">
-              <h6>인프라</h6>
-              <List contents={["CloudFront", "S3", "ECS", "Lambda"]} />
-            </Flex>
-            <Flex direction="column">
-              <h6>테스트</h6>
-              <List
-                contents={[
-                  "Jest",
-                  "Playwright",
-                  "Mock Service Worker",
-                  "React Testing Library",
-                ]}
-              />
-            </Flex>
-            <Flex direction="column">
-              <h6>CI/CD</h6>
-              <List contents={["Jenkins", "Fastlane", "Github actions"]} />
-            </Flex>
-            <Flex direction="column">
-              <h6>스타일</h6>
-              <List contents={["emotion", "styled-components"]} />
-            </Flex>
-            <Flex direction="column">
-              <h6>모니터링</h6>
-              <List contents={["Sentry"]} />
-            </Flex>
-          </div>
-          <Divider type="horizontal" />
-          <Detail text="협업시 활용한 도구들입니다." />
-          <List
-            contents={[
-              "디자인: Figma",
-              "소통: Microsoft Teams",
-              "일감 관리: Jira, Confluence",
-            ]}
-          />
-        </Card>
-
         <Card title="경력사항">
           <SubTitle text="주식회사 에이피알" />
           <Detail text="프론트엔드 개발자 | 2023년 6월 - 현재" />
@@ -145,8 +56,7 @@ export default function Resume() {
             contents={[
               "웹뷰 내의 게임 전체 프로젝트 설계 및 개발",
               "다국가 웹뷰 서비스 개발 및 서비스 운영을 위한 관리자 페이지 개발",
-              "Jenkins CI/CD 프로세스 개선 및 유지보수",
-              "ECS 기반 프론트 인프라 관리 및 성능 개선",
+              "프론트엔드 CI/CD 프로세스 개선 및 유지보수",
               "테스트 코드 작성 및 레거시 코드 리팩토링",
               "사내 프론트엔드 개발자 스터디 리딩",
               "2024년 상반기 우수사원 수상",
@@ -157,7 +67,6 @@ export default function Resume() {
           <Detail text="프론트엔드 개발자 | 2022년 1월 - 2023년 6월" />
           <List
             contents={[
-              "전기차 충전기 연동 앱 설계, 개발, 운영 및 타사에 제공할 수 있는 커스텀 기능 개발",
               "다국가 충전기 위치 및 상태 관리를 위한 관리자 페이지 및 충전기 설정 앱 개발",
               "관리자 페이지 Javascript + Vue2 환경에서 -> Typescript + Next.js로 마이그레이션",
               "앱/웹 Github actions/ Fastlane  CI/CD 환경 구축",
@@ -314,62 +223,10 @@ export default function Resume() {
             ]}
           />
           <Divider type="horizontal" />
-          <SubTitle text="EVpay 개발 및 운영" />
-          <Detail text="2022년 01월 - 2023년 06월" />
-          <Detail text="에바 | 충전기 정보 확인 및 원격 충전 시작이 가능한 앱" />
-          <Detail text="기술 스택 | Flutter, GetX, Freezed, Dio, Firebase Cloud Message, Fastlane" />
-          <Gap type="vertical" size={16} />
-          [설명]
-          <br />
-          전기차 충전기를 사용할 때 QR 코드를 인식해서 충전을 시작할 수 있는 앱.
-          SMS를 이용해 로그인을 진행하며 본인 카드 및 환경부 카드를 등록하여
-          충전기를 사용하고 결제 가능
-          <br />
-          <Link
-            href="https://photos.app.goo.gl/juz6ju37W3wmeurc7"
-            text="동작 영상"
-          />
-          <Link
-            href="https://apps.apple.com/kr/app/evpay/id1619603697"
-            text="App Store"
-          />
-          <Link
-            href="https://play.google.com/store/apps/details?id=kr.co.evar.evpay"
-            text="Google Play"
-          />
-          <Link href="https://evpay.co.kr" text="Web" />
-          <Gap type="vertical" size={16} />
-          [개발]
-          <br />
-          앱 개발 인원이 한명인 상황에 맞는 Flutter를 기술스택으로 선정, 모든 UI
-          및 기능을 구현
-          <List
-            contents={[
-              "Flutter를 사용하여 AOS, iOS, Web 3개의 플랫폼에 개발을 진행 후 배포 및 운영",
-              "카메라로 QR 코드를 스캔하여 충전을 시작하는 기능 개발",
-              "휴대폰 기반 로그인/회원가입 및 자동로그인 개발",
-              "결제 카드 등록 및 결제 연동",
-              "FCM 기반 실시간 상태 업데이트",
-              "Fastlane을 활용한 앱 출시 CI/CD 구축",
-              "서브모듈 활용 주요 로직 분리 후 UI 커스텀 하여 타사에 제공",
-            ]}
-          />
-          [경험]
-          <br />
-          크로스플랫폼 및 Flutter 라이브러리 지원에서 발생하는 문제 해결
-          <List
-            contents={[
-              "웹에서 지원하지 않는 라이브러리를 사용 가능하도록 javascript interoperability를 사용하여 인터페이스를 설계",
-              "Flutter CameraX에서 지원하지 않는 터치하여 초점을 맞추는 기능을 Swift, Kotlin 네이티브 언어로 구현",
-            ]}
-          />
-          [성과]
-          <br />앱 출시 후 사용자 수 0 {"->"} 1000명으로 증가
-          <Divider type="horizontal" />
           <SubTitle text="전기차 충전기 관리자 페이지 개발" />
           <Detail text="2022년 01월 - 2023년 06월" />
           <Detail text="에바 | 충전기의 원격 조작, 설정 및 위치 확인을 위한 페이지" />
-          <Detail text="기술 스택 | Next.js, MUI, Jotai" />
+          <Detail text="기술 스택 | Next.js, MUI, zustand" />
           <Gap type="vertical" size={16} />
           [설명]
           <br />
@@ -467,47 +324,75 @@ export default function Resume() {
           />
         </Card>
 
-        <Card title="자기소개">
-          <p>
-            글을 끝까지 읽어주셔서 감사합니다. 저에 대해서 궁금하실 것 같은
-            사항들을 좀 더 자세히 적어보겠습니다.
-            <br />
-            <br />
-            <strong>
-              <i>사용자 경험과 개발자의 경험을 중시합니다.</i>
-            </strong>
-            <br />
-            제품 사용자의 경험도 중요하지만, 제품을 개발하는 개발자의 경험 또한
-            무척 중요하다고 생각합니다. 저는 사용자에게 즉각적인 UI 피드백을
-            제공하는 데 중점을 두며, 개발할 때 이러한 기다림 없는 경험이 고객이
-            다시 제품을 찾도록 만드는 열쇠라고 믿습니다. 또한, 제가 작성한
-            코드는 다른 개발자가 쉽게 이해하고 직관적으로 사용할 수 있어야
-            한다고 생각합니다. 이를 통해 개발자가 자신의 본래 업무에 더 집중할
-            수 있는 환경을 조성하고자 합니다.
-            <br />
-            <br />
-            <strong>
-              <i>문제 해결에 집중합니다.</i>
-            </strong>
-            <br />
-            저는 개발이 단순히 끝나는 것이 아니라, 문제를 해결하고 가치를
-            창출하는 과정이라고 생각합니다. 이를 위해 다른 팀과의 원활한 소통을
-            통해 아이디어를 공유하고 문제 상황을 사전에 예방하는 것을 중요하게
-            여깁니다. 또한, 개발이 완벽할 수 없다는 사실을 잘 알고 있습니다.
-            그래서 버그 발생 시 빠르게 대응할 수 있는 환경을 구축하기 위해
-            CI/CD와 이슈 추적 시스템을 효과적으로 활용하고 있습니다.
-            <br />
-            <br />
-            <strong>
-              <i>새로운 기술들과 원리에 대한 호기심이 큽니다.</i>
-            </strong>
-            <br />
-            저는 새로운 기술에 강한 관심을 가지고 있으며, 이를 직접 사용해보는
-            것을 좋아합니다. 사용하고 있는 도구들을 기초부터 이해하고, 원리가
-            무엇인지 깊이 고민하는 과정을 즐깁니다. 기존에 사용하던 라이브러리에
-            대해서도 의문을 가지고 더 나은 방법은 없는지 실제로 구현해보고
-            의문을 해결합니다.
-          </p>
+        <Card title="기술">
+          <Gap type="vertical" size={8} />
+          <div
+            className={css`
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+
+              @media screen and (max-width: 425px) {
+                grid-template-columns: repeat(2, 1fr);
+              }
+
+              @media screen and (max-width: 375px) {
+                display: grid;
+                overflow: auto;
+                grid-template-rows: 1fr;
+                grid-template-columns: 1fr;
+              }
+            `}
+          >
+            <Flex direction="column">
+              <h6>주요 기술</h6>
+              <List contents={["React.js", "Next.js", "Flutter"]} />
+            </Flex>
+            <Flex direction="column">
+              <h6>언어</h6>
+              <List contents={["Typescript", "Javascript", "Dart"]} />
+            </Flex>
+            <Flex direction="column">
+              <h6>상태관리</h6>
+              <List contents={["TanStack Query", "Valtio", "zustand"]} />
+            </Flex>
+
+            <Flex direction="column">
+              <h6>인프라</h6>
+              <List contents={["CloudFront", "S3", "ECS", "Lambda"]} />
+            </Flex>
+            <Flex direction="column">
+              <h6>테스트</h6>
+              <List
+                contents={[
+                  "Jest",
+                  "Playwright",
+                  "Mock Service Worker",
+                  "React Testing Library",
+                ]}
+              />
+            </Flex>
+            <Flex direction="column">
+              <h6>CI/CD</h6>
+              <List contents={["Jenkins", "Fastlane", "Github actions"]} />
+            </Flex>
+            <Flex direction="column">
+              <h6>스타일</h6>
+              <List contents={["emotion", "styled-components"]} />
+            </Flex>
+            <Flex direction="column">
+              <h6>모니터링</h6>
+              <List contents={["Sentry"]} />
+            </Flex>
+          </div>
+          <Divider type="horizontal" />
+          <Detail text="협업시 활용한 도구들입니다." />
+          <List
+            contents={[
+              "디자인: Figma",
+              "소통: Microsoft Teams",
+              "일감 관리: Jira, Confluence",
+            ]}
+          />
         </Card>
       </div>
     </div>
