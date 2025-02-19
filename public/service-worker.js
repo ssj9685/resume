@@ -22,8 +22,8 @@ self.addEventListener("activate", (event) => {
   event.waitUntil(cacheInvalidate());
 });
 
-function interceptor({ request }) {
-  storeResponse(request);
+async function interceptor({ request }) {
+  await storeResponse(request);
 
   return caches.match(request);
 }
