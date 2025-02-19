@@ -22,14 +22,19 @@ self.addEventListener("activate", (event) => {
   event.waitUntil(cacheInvalidate());
 });
 
-async function interceptor(event) {
+function interceptor({ request }) {
+  storeResponse(request);
+
+  return caches.match(request);
+}
+
+async function storeResponse(request) {
   try {
-    const response = await fetch(event.request);
+    const response = await fetch(request);
     const cache = await caches.open(CACHE_NAME);
-    cache.put(event.request, response.clone());
-    return response;
+    cache.put(request, response.clone());
   } catch {
-    return caches.match(event.request);
+    console.warn("Fetch failed.");
   }
 }
 
