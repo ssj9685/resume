@@ -67,77 +67,6 @@ export default function Resume() {
           </p>
         </Card>
 
-        <Card title="기술">
-          <Gap type="vertical" size={8} />
-          <div
-            className={css`
-              display: grid;
-              grid-template-columns: repeat(3, 1fr);
-
-              @media screen and (max-width: 425px) {
-                grid-template-columns: repeat(2, 1fr);
-              }
-
-              @media screen and (max-width: 375px) {
-                display: grid;
-                overflow: auto;
-                grid-template-rows: 1fr;
-                grid-template-columns: 1fr;
-              }
-            `}
-          >
-            <Flex direction="column">
-              <h6>주요 기술</h6>
-              <List contents={["React.js", "Next.js", "Flutter"]} />
-            </Flex>
-            <Flex direction="column">
-              <h6>언어</h6>
-              <List contents={["Typescript", "Javascript", "Dart"]} />
-            </Flex>
-            <Flex direction="column">
-              <h6>상태관리</h6>
-              <List contents={["TanStack Query", "Valtio", "zustand"]} />
-            </Flex>
-
-            <Flex direction="column">
-              <h6>인프라</h6>
-              <List contents={["CloudFront", "S3", "ECS", "Lambda"]} />
-            </Flex>
-            <Flex direction="column">
-              <h6>테스트</h6>
-              <List
-                contents={[
-                  "Jest",
-                  "Playwright",
-                  "Mock Service Worker",
-                  "React Testing Library",
-                ]}
-              />
-            </Flex>
-            <Flex direction="column">
-              <h6>CI/CD</h6>
-              <List contents={["Jenkins", "Fastlane", "Github actions"]} />
-            </Flex>
-            <Flex direction="column">
-              <h6>스타일</h6>
-              <List contents={["emotion", "styled-components"]} />
-            </Flex>
-            <Flex direction="column">
-              <h6>모니터링</h6>
-              <List contents={["Sentry"]} />
-            </Flex>
-          </div>
-          <Divider type="horizontal" />
-          <Detail text="협업시 활용한 도구들입니다." />
-          <List
-            contents={[
-              "디자인: Figma",
-              "소통: Microsoft Teams",
-              "일감 관리: Jira, Confluence",
-            ]}
-          />
-        </Card>
-
         <Card title="경력사항">
           <SubTitle text="주식회사 에이피알" />
           <Detail text="프론트엔드 개발자 | 2023년 6월 - 현재" />
@@ -369,7 +298,7 @@ export default function Resume() {
           <SubTitle text="전기차 충전기 관리자 페이지 개발" />
           <Detail text="2022년 01월 - 2023년 06월" />
           <Detail text="에바 | 충전기의 원격 조작, 설정 및 위치 확인을 위한 페이지" />
-          <Detail text="기술 스택 | Next.js, MUI, Jotai" />
+          <Detail text="기술 스택 | Next.js, MUI, zustand" />
           <Gap type="vertical" size={16} />
           [설명]
           <br />
@@ -463,6 +392,77 @@ export default function Resume() {
                 href="https://github.com/ssj9685/yatata"
                 text="Github 링크"
               />,
+            ]}
+          />
+        </Card>
+
+        <Card title="기술">
+          <Gap type="vertical" size={8} />
+          <div
+            className={css`
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+
+              @media screen and (max-width: 425px) {
+                grid-template-columns: repeat(2, 1fr);
+              }
+
+              @media screen and (max-width: 375px) {
+                display: grid;
+                overflow: auto;
+                grid-template-rows: 1fr;
+                grid-template-columns: 1fr;
+              }
+            `}
+          >
+            <Flex direction="column">
+              <h6>주요 기술</h6>
+              <List contents={["React.js", "Next.js", "Flutter"]} />
+            </Flex>
+            <Flex direction="column">
+              <h6>언어</h6>
+              <List contents={["Typescript", "Javascript", "Dart"]} />
+            </Flex>
+            <Flex direction="column">
+              <h6>상태관리</h6>
+              <List contents={["TanStack Query", "Valtio", "zustand"]} />
+            </Flex>
+
+            <Flex direction="column">
+              <h6>인프라</h6>
+              <List contents={["CloudFront", "S3", "ECS", "Lambda"]} />
+            </Flex>
+            <Flex direction="column">
+              <h6>테스트</h6>
+              <List
+                contents={[
+                  "Jest",
+                  "Playwright",
+                  "Mock Service Worker",
+                  "React Testing Library",
+                ]}
+              />
+            </Flex>
+            <Flex direction="column">
+              <h6>CI/CD</h6>
+              <List contents={["Jenkins", "Fastlane", "Github actions"]} />
+            </Flex>
+            <Flex direction="column">
+              <h6>스타일</h6>
+              <List contents={["emotion", "styled-components"]} />
+            </Flex>
+            <Flex direction="column">
+              <h6>모니터링</h6>
+              <List contents={["Sentry"]} />
+            </Flex>
+          </div>
+          <Divider type="horizontal" />
+          <Detail text="협업시 활용한 도구들입니다." />
+          <List
+            contents={[
+              "디자인: Figma",
+              "소통: Microsoft Teams",
+              "일감 관리: Jira, Confluence",
             ]}
           />
         </Card>

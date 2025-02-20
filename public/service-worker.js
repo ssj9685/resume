@@ -1,4 +1,9 @@
-const CACHE_NAME = "pwa-cache-v1";
+const CACHE_NAME = "pwa-cache-v2";
+
+/**
+ * @type {Cache}
+ */
+let cacheInstance;
 
 self.addEventListener("install", (event) => {
   self.skipWaiting();
@@ -23,18 +28,14 @@ self.addEventListener("activate", (event) => {
 });
 
 async function interceptor({ request }) {
-  await storeResponse(request);
+  const cache = await getCacheInstance();
 
-  return caches.match(request);
-}
-
-async function storeResponse(request) {
   try {
     const response = await fetch(request);
-    const cache = await caches.open(CACHE_NAME);
     cache.put(request, response.clone());
+    return response;
   } catch {
-    console.warn("Fetch failed.");
+    return cache.match(request);
   }
 }
 
@@ -46,4 +47,12 @@ async function cacheInvalidate() {
       .filter((name) => name !== CACHE_NAME)
       .map((name) => caches.delete(name))
   );
+}
+
+async function getCacheInstance() {
+  if (!cacheInstance) {
+    cacheInstance = await caches.open(CACHE_NAME);
+  }
+
+  return cacheInstance;
 }

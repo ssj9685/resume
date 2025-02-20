@@ -1,5 +1,3 @@
-// src/serviceWorkerRegistration.ts
-
 interface Config {
   onSuccess?: (registration: ServiceWorkerRegistration) => void;
   onUpdate?: (registration: ServiceWorkerRegistration) => void;
