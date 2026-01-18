@@ -1,8 +1,8 @@
 import { css } from "@emotion/css";
-import { ComponentProps, CSSProperties, ReactNode } from "react";
+import type { ComponentProps, CSSProperties, ReactNode } from "react";
 
 const styles = {
-  flex: (props: ComponentProps<typeof Flex>) => css`
+	flex: (props: ComponentProps<typeof Flex>) => css`
     display: flex;
     flex-direction: ${props.direction};
     place-content: ${props.mainAlign};
@@ -14,13 +14,13 @@ const styles = {
 };
 
 export default function Flex(props: {
-  direction?: CSSProperties["flexDirection"];
-  mainAlign?: CSSProperties["justifyContent"];
-  crossAlign?: CSSProperties["alignItems"];
-  flex?: CSSProperties["flex"];
-  gap?: number;
-  wrap?: boolean;
-  children: ReactNode;
+	direction?: CSSProperties["flexDirection"];
+	mainAlign?: CSSProperties["justifyContent"];
+	crossAlign?: CSSProperties["alignItems"];
+	flex?: CSSProperties["flex"];
+	gap?: number;
+	wrap?: boolean;
+	children: ReactNode;
 }) {
-  return <div className={styles.flex(props)}>{props.children}</div>;
+	return <div className={styles.flex(props)}>{props.children}</div>;
 }

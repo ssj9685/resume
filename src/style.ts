@@ -1,13 +1,13 @@
 import { css } from "@emotion/css";
 
 export const styles = {
-  container: css`
+	container: css`
     width: 100%;
     display: flex;
     place-content: center;
     font-family: Pretendard, Inter;
   `,
-  content: css`
+	content: css`
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@ export const styles = {
       }
     }
   `,
-  header: css`
+	header: css`
     padding: 2rem;
     border-radius: 10px;
     display: flex;
@@ -34,57 +34,57 @@ export const styles = {
     justify-content: space-between;
     align-items: center;
   `,
-  profile: css`
+	profile: css`
     display: flex;
   `,
-  contact: css`
+	contact: css`
     display: grid;
     grid-template-columns: 64px 1fr;
     gap: 8px;
   `,
-  name: css`
+	name: css`
     font-size: 2.5rem;
     font-weight: 700;
     margin: 0;
     letter-spacing: -0.5px;
   `,
-  title: css`
+	title: css`
     font-size: 1.5rem;
     font-weight: 300;
     margin: 0.5rem 0 0;
     opacity: 0.9;
   `,
-  contactItem: css`
+	contactItem: css`
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
   `,
-  main: css`
+	main: css`
     display: flex;
     flex-direction: column;
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
   `,
-  experienceTitle: css`
+	experienceTitle: css`
     font-size: 1.1rem;
     font-weight: 600;
     color: #2c3e50;
     margin-bottom: 0.25rem;
   `,
-  experienceDetails: css`
+	experienceDetails: css`
     font-size: 0.9rem;
     margin-bottom: 0.75rem;
   `,
-  skillGrid: css`
+	skillGrid: css`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   `,
-  skillCategory: css`
+	skillCategory: css`
     font-weight: 600;
     color: #3a7bd5;
     margin-bottom: 0.5rem;
   `,
-  skillList: css`
+	skillList: css`
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -93,14 +93,14 @@ export const styles = {
       font-size: 0.9rem;
     }
   `,
-  highlightBox: css`
+	highlightBox: css`
     background-color: #e8f4fd;
     border-left: 4px solid #3a7bd5;
     padding: 1rem;
     margin: 1rem 0;
     border-radius: 0 5px 5px 0;
   `,
-  global: css`
+	global: css`
     *,
     *::before,
     *::after {

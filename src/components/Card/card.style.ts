@@ -1,7 +1,7 @@
 import { css } from "@emotion/css";
 
 export const cardStyle = {
-  section: css`
+	section: css`
     background: white;
     padding: 1.2rem;
     border-radius: 10px;

@@ -1,9 +1,9 @@
 import { css } from "@emotion/css";
-import { ComponentProps, CSSProperties, ReactNode } from "react";
+import type { ComponentProps, CSSProperties, ReactNode } from "react";
 
 const styles = {
-  grid: (props: ComponentProps<typeof Grid>) =>
-    css`
+	grid: (props: ComponentProps<typeof Grid>) =>
+		css`
       display: grid;
       width: ${props.width};
       height: ${props.height};
@@ -14,12 +14,12 @@ const styles = {
 };
 
 export default function Grid(props: {
-  width?: CSSProperties["width"];
-  height?: CSSProperties["height"];
-  areas?: CSSProperties["gridTemplateAreas"];
-  rows?: CSSProperties["gridTemplateRows"];
-  columns?: CSSProperties["gridTemplateColumns"];
-  children?: ReactNode;
+	width?: CSSProperties["width"];
+	height?: CSSProperties["height"];
+	areas?: CSSProperties["gridTemplateAreas"];
+	rows?: CSSProperties["gridTemplateRows"];
+	columns?: CSSProperties["gridTemplateColumns"];
+	children?: ReactNode;
 }) {
-  return <div className={styles.grid(props)}>{props.children}</div>;
+	return <div className={styles.grid(props)}>{props.children}</div>;
 }

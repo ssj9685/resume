@@ -1,7 +1,7 @@
 import { css } from "@emotion/css";
 
 export const subTitleStyle = {
-  subTitle: css`
+	subTitle: css`
     margin: 0.25rem 0;
   `,
 };
