@@ -4,7 +4,7 @@ import { cardStyle } from "./card.style";
 
 export default function Card(props: {
 	className?: string;
-	title: string;
+	title: ReactNode;
 	children: ReactNode;
 }) {
 	const { title, children, className } = props;

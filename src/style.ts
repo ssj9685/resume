@@ -100,6 +100,144 @@ export const styles = {
     margin: 1rem 0;
     border-radius: 0 5px 5px 0;
   `,
+	projectCompany: css`
+    display: grid;
+    grid-template-columns: 168px 1fr;
+    gap: 24px;
+    padding: 16px 0;
+    border-top: 1px solid #e5e5e5;
+
+    &:first-of-type {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  `,
+	projectCompanyHeader: css`
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  `,
+	projectCompanyName: css`
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+  `,
+	projectCompanyPeriod: css`
+    font-size: 0.85rem;
+    color: #777;
+    margin: 0;
+  `,
+	projectList: css`
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  `,
+	projectItem: css`
+    padding-bottom: 24px;
+    border-bottom: 1px solid #eee;
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  `,
+	projectHeader: css`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px 16px;
+    margin-bottom: 8px;
+  `,
+	projectTitle: css`
+    font-size: 1rem;
+    font-weight: 650;
+    margin: 0;
+  `,
+	projectPeriod: css`
+    font-size: 0.85rem;
+    color: #777;
+    margin: 0;
+  `,
+	projectMeta: css`
+    font-size: 0.85rem;
+    color: #555;
+    margin: 0;
+  `,
+	projectDescription: css`
+    margin: 0 0 8px;
+    color: #333;
+  `,
+	projectLinks: css`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  `,
+	projectSection: css`
+    margin-top: 20px;
+  `,
+	projectSectionTitle: css`
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 0 0 10px;
+  `,
+	careerItem: css`
+    display: grid;
+    grid-template-columns: 168px 1fr;
+    gap: 16px;
+    align-items: baseline;
+    padding: 16px 0;
+    border-top: 1px solid #e5e5e5;
+
+    &:first-of-type {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  `,
+	careerPeriod: css`
+    font-size: 0.85rem;
+    color: #777;
+    margin: 0;
+    padding-top: 5px;
+    padding-right: 16px;
+    border-right: 1px solid #e5e5e5;
+    white-space: nowrap;
+    line-height: 1.4;
+
+    @media (max-width: 768px) {
+      padding-right: 0;
+      text-align: left;
+      border-right: none;
+    }
+  `,
+	careerInfo: css`
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  `,
+	careerName: css`
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.4;
+  `,
+	careerTitleWrap: css`
+    display: inline-flex;
+    align-items: baseline;
+    gap: 8px;
+  `,
+	careerTotal: css`
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #777;
+  `,
 	global: css`
     *,
     *::before,
@@ -127,6 +265,36 @@ export const styles = {
     html {
       height: 100%;
       scroll-behavior: smooth;
+    }
+
+    @media print {
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      :global(html),
+      :global(body) {
+        width: 210mm;
+        height: 297mm;
+      }
+
+      :global(body) {
+        margin: 0;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        font-family: Pretendard, Inter, sans-serif;
+      }
+
+      :global(*) {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      :global(a) {
+        text-decoration: none;
+        color: inherit;
+      }
     }
 
     h1,
@@ -165,7 +333,7 @@ export const styles = {
     h4 {
       font-size: 1.75rem;
       line-height: 1.5;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0rem;
       font-weight: 500;
     }
 
