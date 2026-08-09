@@ -1,0 +1,39 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.tsbuildinfo
+*.local
+output/
+tmp/
+.playwright-mcp/
+scripts/
+.private/
+
+# Local-only resume research and personal source material
+docs/06-resume-writing/
+docs/01-profile/personal-details.md
+public/profile.jpg
+public/profile2.jpg
+design-qa.md
+
+# Internal resume evidence and working notes
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
